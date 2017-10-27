@@ -36,6 +36,10 @@ const productionConfig = merge([
         name: "vendor",
         minChunks: isVendor,
       }),
+      new webpack.optimize.CommonsChunkPlugin({
+        name: "currywurst",
+        minChunks: Infinity,
+      }),
     ],
   },
   parts.setFreeVariable("process.env.NODE_ENV", "production"),
