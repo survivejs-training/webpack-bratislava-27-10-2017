@@ -3,6 +3,10 @@
 * [Slides](https://presentations.survivejs.com/webpack-the-good-parts/#/11)
 * [Book](https://survivejs.com/webpack/)
 
+## Pro Tips
+
+* `npm run build -- --output-pathinfo`
+
 ## Goals
 
 * New to webpack, wants to understand how it works -> Understand basic ideas
