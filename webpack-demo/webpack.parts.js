@@ -1,4 +1,5 @@
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const webpack = require("webpack");
 
 exports.devServer = ({ host, port } = {}) => ({
   devServer: {
@@ -66,3 +67,12 @@ exports.loadJavaScript = ({ include, exclude }) => ({
     ],
   },
 });
+
+exports.setFreeVariable = (key, value) => {
+  const env = {};
+  env[key] = JSON.stringify(value);
+
+  return {
+    plugins: [new webpack.DefinePlugin(env)],
+  };
+};
