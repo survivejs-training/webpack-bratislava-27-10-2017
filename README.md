@@ -6,6 +6,7 @@
 ## Pro Tips
 
 * `npm run build -- --output-pathinfo`
+* `use: ['style-loader', 'css-loader']` === `styleLoader(cssLoader(input))`
 
 ## Goals
 
