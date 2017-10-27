@@ -41,8 +41,6 @@ const productionConfig = merge([
 ]);
 
 function isVendor({ resource }) {
-  console.log(resource);
-
   return (
     resource && resource.indexOf("node_modules") >= 0 && resource.match(/\.js$/)
   );
