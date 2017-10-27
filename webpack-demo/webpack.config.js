@@ -41,6 +41,7 @@ const productionConfig = merge([
         minChunks: Infinity,
       }),
     ],
+    recordsPath: path.join(__dirname, "records.json"),
   },
   parts.setFreeVariable("process.env.NODE_ENV", "production"),
 ]);
