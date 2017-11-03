@@ -1,6 +1,6 @@
 # Webpack - The Good Parts
 
-* [Slides](https://presentations.survivejs.com/webpack-the-good-parts/#/11)
+* [Slides](https://presentations.survivejs.com/webpack-the-good-parts/)
 * [Book](https://survivejs.com/webpack/)
 
 ## Pro Tips
